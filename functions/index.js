@@ -104,7 +104,7 @@ exports.app = onRequest({cors: true}, async (req, res) => {
     <title>HotFX Form Hole</title>
     <style>
       body {
-        font-family: sans-serif;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
         line-height: 1.6;
         padding: 20px;
         background-color: #f4f4f4;
@@ -112,9 +112,14 @@ exports.app = onRequest({cors: true}, async (req, res) => {
       }
 
       h1 {
-        color: #555;
-        border-bottom: 2px solid #eee;
+        color: black;
         padding-bottom: 10px;
+      }
+
+      h1 img {
+        margin-right: 8px;
+        position: relative;
+        top: 20px;
       }
 
       .submission {
@@ -139,6 +144,24 @@ exports.app = onRequest({cors: true}, async (req, res) => {
         color: #666;
         font-size: 0.8em;
       }
+
+      code {
+        font-family: Courier New, Courier, monospace;
+        font-size: 1.1em;
+      }
+      
+      a {
+        color: DodgerBlue;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      a:visited {
+        color: SlateBlue;
+      }
     </style>
     <script>
       document.addEventListener('DOMContentLoaded', function() {
@@ -150,7 +173,15 @@ exports.app = onRequest({cors: true}, async (req, res) => {
     </script>
   </head>
   <body>
-    <h1>HotFX Form Hole</h1>
+    <h1>
+      <img width="200" src="https://static.hot.page/hotfx-logo.svg">
+      Form Hole
+    </h1>
+    <p>
+      This is a demo for the <code>&lt;hotfx-form&gt;</code> custom element.
+      <a href="https://fx.hot.page/form">Read more</a> or
+      <a href="https://github.com/hot-page/form-hole">view the source.</a>
+    </p>
     ${submissionsHtml}
   </body>
 </html>`
