@@ -113,7 +113,7 @@ exports.app = onRequest({cors: true}, async (req, res) => {
 
       h1 {
         color: black;
-        padding-bottom: 10px;
+        margin: -10px 0 30px 0;
       }
 
       h1 img {
@@ -122,21 +122,29 @@ exports.app = onRequest({cors: true}, async (req, res) => {
         top: 20px;
       }
 
+      p {
+        max-width: 800px;
+      }
+
       .submission {
         background-color: #fff;
-        padding: 15px;
-        margin-bottom: 15px;
+        padding: 12px;
+        margin-bottom: 24px;
         box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         max-width: 800px;
+        display: grid;
+        gap: 8px;
+      }
+
+      .submission p {
+        margin: 0;
       }
 
       .name {
         font-weight: bold;
-        margin-bottom: 5px;
       }
 
       .message {
-        margin-bottom: 10px;
         white-space: pre-wrap;
       }
 
@@ -178,9 +186,11 @@ exports.app = onRequest({cors: true}, async (req, res) => {
       Form Hole
     </h1>
     <p>
-      This is a demo for the <code>&lt;hotfx-form&gt;</code> custom element.
-      <a href="https://fx.hot.page/form">Read more</a> or
-      <a href="https://github.com/hot-page/form-hole">view the source.</a>
+      This is a demo backend for the
+      <a href="https://fx.hot.page/form"><code>&lt;hotfx-form&gt;</code> custom element</a>.
+      You are welcome to <a href="https://fx.hot.page">read about HotFX</a> or
+      <a href="https://github.com/hot-page/form-hole">view the source</a>
+      for this backend.
     </p>
     ${submissionsHtml}
   </body>
