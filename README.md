@@ -1,7 +1,9 @@
 
 # HotFX Form Hole
 
-This is a simple Firebase app that stores form submissions in a database with POST and displays them with GET. Thanks, Claude.
+This is a simple demo backend for the [`<hotfx-form>` custom element](https://fx.hot.page/form).
+
+You can view it live at [https://form-hole.squids.online](https://form-hole.squids.online).
 
 
 ## Start the Emulator
@@ -14,6 +16,7 @@ Then open 127.0.0.1:5002
 
 
 ## Deploy
+
 ```
 firebase deploy
 ```
